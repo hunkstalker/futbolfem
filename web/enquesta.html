@@ -22,20 +22,20 @@
     <form action="./survey.php" method="POST" name="survey">
         <h2>Enquesta de satisfacció</h2>
         <p>
-            <label for="email"><b>Email</b></label>
-            <input id="email" type="email" name="correo" placeholder="Introduce tu correo electrónico" required>
+            <label for="email"><b>Email:</b></label><br>
+            <input id="email" type="email" name="correo" placeholder="Introdueix el teu email" required>
         </p>
         <p>
-            <label for="name"><b>Nom</b></label>
+            <label for="name"><b>Nom i cognoms: </b></label><br>
             <input id="name" type="text" placeholder="Introdueix el teu nom y cognoms" size="40" maxlength="60" name="uname" required>
         </p>
         <p>
-            <label for="points"><b>Puntuació</b></label>
+            <label for="points"><b>Puntuació:</b></label><br>
             <input id="points" type="number" min="1" max="5" step="1" value="5" name="points" required>
         </p>
         <p>
-            <label for="valuation"><b>Valoració</b></label>
-            <select id="valuation" name="valuation" required>
+            <label for="rank"><b>Valoració de la web: </b></label><br>
+            <select id="rank" name="rank" required>
                 <option value="excellent">Excel·lent</option>
                 <option value="remarkable" selected>Notable</option>
                 <option value="good">Bona</option>
@@ -44,14 +44,12 @@
               </select>
         </p>
         <p>
-            <label for="inColor1"><b>Color del tema</b></label>
-            <input id="inColor1" type="color" name="color1"  value="#FFFFFF">
+            <label for="colorTheme"><b>Color del tema:</b></label><br>
+            <input id="colorTheme" type="color" name="color1"  value="#FFFFFF">
         </p>
         <p>
-            <label for="obs"><b>Observacions</b></label>
-        </p>
-        <p>
-            <textarea id="obs" name="obs" rows="10" cols="100"></textarea>
+            <label for="feedback"><b>Observacions:</b></label><br>
+            <textarea id="feedback" name="feedback" rows="2" cols="35"></textarea>
         </p>
         <p>
             <input value="Nateja el formulari" type="reset">
@@ -59,7 +57,7 @@
         </p>
     </form>
     <footer>
-        IBERDROLA Copyright &copy; 2019 | <a href="https://primeraiberdrola.es/aviso-legal/" target="_blank">Aviso legal</a>
+        IBERDROLA Copyright &copy; 2020 | <a href="https://primeraiberdrola.es/aviso-legal/" target="_blank">Aviso legal</a>
         <a href="https://primeraiberdrola.es/politica-de-cookies/" target="_blank">Política de cookies</a>
         <a href="mailto:ministericulturaesport@info.com">ministericulturaesport@info.com</a>
         <a href="https://www.facebook.com/Primeraiberdrola/" target="_blank"><img src="../img/fb-logo.png" alt="Logo Facebook"></a>
