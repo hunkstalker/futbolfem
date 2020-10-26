@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Primera Iberdrola</title>
+</head>
+<body>
+    <img src="../img/primera_iberdrola_portada3.png" alt="Logo Primera Iberdrola">
+    <nav>
+        <a href="../index.html">Tornar al inici</a>
+    </nav>
+    <div>
+        <!-- Enquesta satisfacció
+            1. email
+            2. Nom complet
+            3. Puntuació web Info 1 a 5
+            4. Valoració Global (Excel·lent, Notable, Bona, Regular, Dolenta)
+            5. Color ideal del tema
+            6. Observacions (bloc de text)
+            7. Botons reset i enviar -->
+    </div>
+    <form action="./survey.php" method="POST">
+        <h2>Enquesta de satisfacció</h2>
+        <p>
+            <label for="email"><b>Email</b></label>
+            <input id="email" type="email" name="correo" placeholder="Introduce tu correo electrónico" required>
+        </p>
+        <p>
+            <label for="name"><b>Nom</b></label>
+            <input id="name" type="text" placeholder="Introdueix el teu nom y cognoms" size="40" maxlength="60" name="uname" required>
+        </p>
+        <p>
+            <label for="points"><b>Puntuació</b></label>
+            <input id="points" type="number" min="1" max="5" step="1" value="5" name="points" required>
+        </p>
+        <p>
+            <label for="valuation"><b>Valoració</b></label>
+            <select name="valuation" required>
+                <option value="excellent">Excel·lent</option>
+                <option value="remarkable" selected>Notable</option>
+                <option value="good">Bona</option>
+                <option value="regular">Regular</option>
+                <option value="bad">Dolenta</option>
+              </select>
+        </p>
+        <p>
+            <label for="inColor1"><b>Color del tema</b></label>
+            <input id="inColor1" type="color" name="color1"  value="#FFFF00">
+        </p>
+        <p>
+            <label for="obs"><b>Observacions</b></label>
+            <textarea name="obs" rows="10" cols="100"></textarea>
+        </p>
+        <p>
+            <input value="Nateja el formulari" type="reset">
+        </p>
+        <p>
+            <input value="Envia el Formulari" type="submit">
+        </p>
+    </form>
+    <footer>
+        IBERDROLA Copyright &copy; 2019 | <a href="https://primeraiberdrola.es/aviso-legal/" target="_blank">Aviso legal</a>
+        <a href="https://primeraiberdrola.es/politica-de-cookies/" target="_blank">Política de cookies</a>
+        <a href="mailto:ministericulturaesport@info.com">ministericulturaesport@info.com</a>
+        <a href="https://www.facebook.com/Primeraiberdrola/" target="_blank"><img src="../img/fb-logo.png" alt="Logo Facebook"></a>
+        <a href="https://twitter.com/PrimerIberdrola" target="_blank"><img src="../img/tw-log.png" alt="Logo Twitter"></a>
+        <a href="https://www.instagram.com/primeraiberdrola/" target="_blank"><img src="../img/ins-logo.png" alt="Logo Instagram"></a>
+    </footer>
+</body>
+</html>
