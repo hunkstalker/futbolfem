@@ -1,4 +1,4 @@
 # futbolfem
 Web Primera Iberdrola
 
-EDUCEM, Granollers. Prácticas de DAM1 Programación Web. https://hunkstalker.github.io/futbolfem/
+Proyecto Web, Programación web DAM1, Educem Granollers 2020. https://hunkstalker.github.io/futbolfem/
