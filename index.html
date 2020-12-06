@@ -1,46 +1,68 @@
 <!DOCTYPE html>
 <html lang="ca">
+
 <head>
     <meta charset="UTF-8">
     <title>Primera Iberdrola</title>
     <meta name="author" content="Denis Anfruns. Curs DAM1 2020/21 Educem, Granollers." />
-    <meta name="description" content="Primera Divisió Femenina Espanya"/>
+    <meta name="description" content="Primera Divisió Femenina Espanya" />
     <meta keywords="futbol, femenino, logroño, jornadas, plantilla">
-    <!-- Responsive.  -->
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <link rel="icon" href="../img/favicon.jpg"/>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <!-- Aquest meta l'afegim per futur web responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="img/favicon.png" />
 </head>
+
 <body>
     <header>
-        <div>
-            <img src="./img/primera_iberdrola_portada3.png" alt="Logo Primera Iberdrola">
+        <div class="site-banner">
+            <div class="text-header">
+                <h2 class="text">EL MEJOR FÚTBOL FEMENINO ESPAÑOL</h2>
+                <p class="text">- PRIMERA IBERDROLA -</p>
+            </div>
+            <!-- text-header -->
         </div>
-        <nav>
-            <ul>
-                <li><a href="./index.html"></a>Inici</li>
-                <li><a href="./web/classif.html">Classificació</a></li>
-                <li><a href="./web/resultats.html">Resultats</a></li>
-                <li><a href="./web/galeria.html">Galeria Audiovisual</a></li> 
-            </ul>
+        <!-- site-banner -->
+        <nav class="nav-header">
+            <a href="./web/classif.html">Classificació</a>
+            <a href="./web/resultats.html">Resultats</a>
+            <a href="./web/galeria.html">Galeria Audiovisual</a>
         </nav>
+        <!-- nav-header -->
     </header>
     <main>
-        <img src="./img/logronyo_escud.png" alt="Logo Logroño">
-        <nav>
-            <a href="./web/infogeneral.html">Info General</a>
-            <a href="./web/planter.html">Planter</a>
-        </nav>
-        <aside>
-            <a href="./web/enquesta.html">Enquesta</a>
+        <article class="main-article">
+            <div>
+                <img src="./img/logronyo_escud-2.png" alt="Logo Logroño">
+            </div>
+            <nav class="main-nav">
+                <a href="./web/infogeneral.html">Info General</a>
+                <a href="./web/planter.html">Planter</a>
+            </nav>
+        </article>
+        <aside class="main-aside">
+            <img src="/img/img-2.jpg" alt="">
+            <a class="btn" href="./web/enquesta.html">Enquesta</a>
         </aside>
     </main>
-    <footer>
-        IBERDROLA Copyright &copy; 2020 | <a href="https://primeraiberdrola.es/aviso-legal/" target="_blank">Aviso legal</a>
-        <a href="https://primeraiberdrola.es/politica-de-cookies/" target="_blank">Política de cookies</a>
-        <a href="mailto:ministericulturaesport@info.com">ministericulturaesport@info.com</a>
-        <a href="https://www.facebook.com/Primeraiberdrola/" target="_blank"><img src="./img/fb-logo.png" alt="Logo Facebook"></a>
-        <a href="https://twitter.com/PrimerIberdrola" target="_blank"><img src="./img/tw-log.png" alt="Logo Twitter"></a>
-        <a href="https://www.instagram.com/primeraiberdrola/" target="_blank"><img src="./img/ins-logo.png" alt="Logo Instagram"></a>
+    <footer class="footer-nav">
+        <div>
+            IBERDROLA Copyright &copy; 2020 |
+        </div>
+        <div>
+            <a href="https://primeraiberdrola.es/aviso-legal/" target="_blank">Aviso legal</a>
+            <a href="https://primeraiberdrola.es/politica-de-cookies/" target="_blank">Política de cookies</a>
+            <a href="mailto:ministericulturaesport@info.com">ministericulturaesport@info.com</a>
+            <a href="https://www.facebook.com/Primeraiberdrola/" target="_blank"><img src="./img/fb-logo.png" alt="Logo Facebook"></a>
+            <a class="footer-img" href="https://twitter.com/PrimerIberdrola" target="_blank"><img src="./img/tw-log.png" alt="Logo Twitter"></a>
+            <a class="footer-img" href="https://www.instagram.com/primeraiberdrola/" target="_blank"><img src="./img/ins-logo.png" alt="Logo Instagram"></a>
+        </div>
     </footer>
 </body>
+
 </html>

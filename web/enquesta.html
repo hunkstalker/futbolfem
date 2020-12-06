@@ -1,68 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Primera Iberdrola</title>
+    <meta name="author" content="Denis Anfruns. Curs DAM1 2020/21 Educem, Granollers." />
+    <meta name="description" content="Primera Divisió Femenina Espanya" />
+    <meta keywords="futbol, femenino, logroño, jornadas, plantilla">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/enquesta.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|PT+Sans:400,700&display=swap" rel="stylesheet">
+    <!-- Aquest meta l'afegim per futur web responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="img/favicon.png" />
 </head>
+
 <body>
-    <img src="../img/primera_iberdrola_portada3.png" alt="Logo Primera Iberdrola">
-    <nav>
-        <a href="../index.html">Tornar al inici</a>
-    </nav>
-    <div>
-        <!-- Enquesta satisfacció
-            1. email
-            2. Nom complet
-            3. Puntuació web Info 1 a 5
-            4. Valoració Global (Excel·lent, Notable, Bona, Regular, Dolenta)
-            5. Color ideal del tema
-            6. Observacions (bloc de text)
-            7. Botons reset i enviar -->
-    </div>
-    <form action="./survey.php" method="POST" name="survey">
-        <h2>Enquesta de satisfacció</h2>
-        <p>
-            <label for="email"><b>Email:</b></label><br>
-            <input id="email" type="email" name="correo" placeholder="Introdueix el teu email" required>
-        </p>
-        <p>
-            <label for="name"><b>Nom i cognoms: </b></label><br>
-            <input id="name" type="text" placeholder="Introdueix el teu nom i cognoms" size="40" maxlength="60" name="uname" required>
-        </p>
-        <p>
-            <label for="points"><b>Puntuació:</b></label><br>
-            <input id="points" type="number" min="1" max="5" step="1" value="5" name="points" required>
-        </p>
-        <p>
-            <label for="rank"><b>Valoració de la web: </b></label><br>
-            <select id="rank" name="rank" required>
+    <header>
+        <div class="site-banner">
+            <div class="text-header">
+                <h2 class="text">EL MEJOR FÚTBOL FEMENINO ESPAÑOL</h2>
+                <p class="text">- PRIMERA IBERDROLA -</p>
+            </div>
+            <!-- text-header -->
+        </div>
+        <!-- site-banner -->
+        <nav class="nav-header">
+            <a href="../index.html">Tornar al inici</a>
+        </nav>
+    </header>
+    <main>
+        <div class="contenedor">
+            <form action="./survey.php" method="POST" name="survey">
+                <h2>Enquesta de satisfacció</h2>
+                <div class="campo">
+                    <label for="email"><b>Email:</b></label><br>
+                    <input id="email" type="email" name="correo" placeholder="Introdueix el teu email" required>
+                </div>
+                <div class="campo">
+                    <label for="name"><b>Nom i cognoms: </b></label><br>
+                    <input id="name" type="text" placeholder="Introdueix el teu nom i cognoms" size="40" maxlength="60" name="uname" required>
+                </div>
+                <div class="punt">
+                    <label for="points"><b>Puntuació:</b></label><br>
+                    <input id="points" type="number" min="1" max="5" step="1" value="5" name="points" required>
+                </div>
+                <div class="campo">
+                    <label for="rank"><b>Valoració de la web: </b></label><br>
+                    <select id="rank" name="rank" required> 
                 <option value="excellent">Excel·lent</option>
                 <option value="remarkable" selected>Notable</option>
                 <option value="good">Bona</option>
                 <option value="regular">Regular</option>
                 <option value="bad">Dolenta</option>
-              </select>
-        </p>
-        <p>
-            <label for="colorTheme"><b>Color del tema:</b></label><br>
-            <input id="colorTheme" type="color" name="color1"  value="#FFFFFF">
-        </p>
-        <p>
-            <label for="feedback"><b>Observacions:</b></label><br>
-            <textarea id="feedback" name="feedback" rows="2" cols="35"></textarea>
-        </p>
-        <p>
-            <input value="Nateja el formulari" type="reset">
-            <input value="Envia el formulari" type="submit">
-        </p>
-    </form>
-    <footer>
-        IBERDROLA Copyright &copy; 2020 | <a href="https://primeraiberdrola.es/aviso-legal/" target="_blank">Aviso legal</a>
-        <a href="https://primeraiberdrola.es/politica-de-cookies/" target="_blank">Política de cookies</a>
-        <a href="mailto:ministericulturaesport@info.com">ministericulturaesport@info.com</a>
-        <a href="https://www.facebook.com/Primeraiberdrola/" target="_blank"><img src="../img/fb-logo.png" alt="Logo Facebook"></a>
-        <a href="https://twitter.com/PrimerIberdrola" target="_blank"><img src="../img/tw-log.png" alt="Logo Twitter"></a>
-        <a href="https://www.instagram.com/primeraiberdrola/" target="_blank"><img src="../img/ins-logo.png" alt="Logo Instagram"></a>
+            </select>
+                </div>
+                <div class="campo">
+                    <label for="colorTheme"><b>Color del tema:</b></label><br>
+                    <input id="colorTheme" type="color" name="color1" value="#FFFFFF">
+                </div>
+                <div class="campo">
+                    <label for="feedback"><b>Observacions:</b></label><br>
+                    <textarea id="feedback" name="feedback" rows="2" cols="35"></textarea>
+                </div>
+                <div>
+                    <input class="btn" value="Nateja el formulari" type="reset">
+                    <input class="btn" value="Envia el formulari" type="submit">
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer class="footer-nav">
+        <div>
+            IBERDROLA Copyright &copy; 2020 |
+        </div>
+        <div>
+            <a href="https://primeraiberdrola.es/aviso-legal/" target="_blank">Aviso legal</a>
+            <a href="https://primeraiberdrola.es/politica-de-cookies/" target="_blank">Política de cookies</a>
+            <a href="mailto:ministericulturaesport@info.com">ministericulturaesport@info.com</a>
+            <a href="https://www.facebook.com/Primeraiberdrola/" target="_blank"><img src="../img/fb-logo.png" alt="Logo Facebook"></a>
+            <a class="footer-img" href="https://twitter.com/PrimerIberdrola" target="_blank"><img src="../img/tw-log.png" alt="Logo Twitter"></a>
+            <a class="footer-img" href="https://www.instagram.com/primeraiberdrola/" target="_blank"><img src="../img/ins-logo.png" alt="Logo Instagram"></a>
+        </div>
     </footer>
 </body>
+
 </html>

@@ -1,0 +1,83 @@
+h2 {
+    font-family: 'Bebas Neue', cursive;
+}
+
+p {
+    font-family: 'PT Sans', sans-serif;
+}
+
+.contenedor {
+    margin-left: 1rem;
+}
+
+.nav-header {
+    padding: 1rem 0rem 1rem 0rem;
+    font-family: 'Bebas Neue', cursive;
+    background-color: black;
+}
+
+.nav-header a {
+    color: white;
+    font-size: 1.5rem;
+    margin-left: 32px;
+    text-decoration: none;
+}
+
+.site-banner {
+    background-image: linear-gradient( rgba(25, 209, 231, 0.5), rgba(243, 17, 224, 0.5)), url(../img/header-2.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    background-attachment: local;
+    height: 30rem;
+}
+
+.text-header {
+    color: white;
+    font-size: 1.5rem;
+    font-family: 'Anton', sans-serif;
+    padding: 10em;
+}
+
+.text-header p {
+    letter-spacing: 0.5rem;
+}
+
+.text {
+    margin-top: 0.2rem;
+    text-align: center;
+}
+
+a:hover {
+    color: green;
+}
+
+.footer-nav {
+    color: black;
+    font-size: 1.5em;
+    font-family: 'Bebas Neue', cursive;
+    background-color: white;
+    margin: 1em;
+}
+
+.footer-nav a {
+    color: black;
+    margin-left: 1em;
+    text-decoration: none;
+}
+
+.footer-nav div {
+    display: inline-block;
+    padding-left: 1.5em;
+    margin: 0.2em;
+}
+
+.footer-nav img {
+    margin: auto;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+a.footer-img {
+    margin: 0px;
+}

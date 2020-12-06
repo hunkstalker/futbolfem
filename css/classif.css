@@ -1,0 +1,29 @@
+h2 {
+    margin-left: 1rem;
+}
+
+table {
+    font-family: 'PT Sans', sans-serif;
+    border-collapse: collapse;
+    width: 50vw;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 0.5rem;
+    width: 0px;
+}
+
+tr:nth-child(odd) {
+    background-color: rgb(182, 182, 182);
+}
+
+tr:nth-child(1) {
+    background-color: green;
+}
+
+table img {
+    width: 5rem;
+    padding: 0.5rem;
+}

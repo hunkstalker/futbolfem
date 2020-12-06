@@ -1,55 +1,67 @@
 <!DOCTYPE html>
 <html lang="ca">
+
 <head>
     <meta charset="UTF-8">
     <title>Galeria Primera Iberdrola</title>
     <meta name="author" content="Denis Anfruns. Curs DAM1 2020/21 Educem, Granollers." />
-    <meta name="description" content="Galeria Primera Divisió Femenina Espanya"/>
+    <meta name="description" content="Primera Divisió Femenina Espanya" />
     <meta keywords="futbol, femenino, logroño, jornadas, plantilla">
-    <!-- Responsive.  -->
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <link rel="icon" href="../img/favicon.jpg"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/galeria.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <!-- Aquest meta l'afegim per futur web responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="img/favicon.png" />
 </head>
+
 <body>
     <header>
-        <div>
-            <img src="../img/primera_iberdrola_portada3.png" alt="Logo Primera Iberdrola">
+        <div class="site-banner">
+            <div class="text-header">
+                <h2 class="text">EL MEJOR FÚTBOL FEMENINO ESPAÑOL</h2>
+                <p class="text">- PRIMERA IBERDROLA -</p>
+            </div>
+            <!-- text-header -->
         </div>
-        <nav>
-            <ul>
-                <li><a href="../index.html"></a>Inici</li>
-                <li><a href="./classif.html">Classificació</a></li>
-                <li><a href="./resultats.html">Resultats</a></li>
-                <li><a href="./galeria.html">Galeria Audiovisual</a></li> 
-            </ul>
+        <!-- site-banner -->
+        <nav class="nav-header">
+            <a href="../index.html">Inici</a>
+            <a href="./classif.html">Classificació</a>
+            <a href="./resultats.html">Resultats</a>
         </nav>
+        <!-- nav-header -->
     </header>
-    <main>
+    <main class="contenedor">
         <h2>Galeria Audiovisual</h2>
         <div>
-            <video title="Finalitzada la Primera Iberdrola" controls><source src="../vid/Finalizada-la-Primera-Iberdrola_Trim.mp4" type="video/mp4">Your browser does not support the video tag.</video>
+            <video class="first" title="Finalitzada la Primera Iberdrola" controls>
+                <source src="../vid/Finalizada-la-Primera-Iberdrola_Trim.mp4" type="video/mp4">Your browser does not
+                support the video tag.</video>
+        </div>
+        <div class="media">
+            <iframe src="https://www.youtube.com/embed/6xBpa5Z0QTg" title="Resum Partit EDF Logroño contra Levante UD 1 a 2. Primera jornada Iberdrola" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/d7s8YfkXbbM" title="Coneixem a la nova jugadora del EDF Logroño, Pamela Tajonar" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/vLmDfJn_abA" title="Coneixem a la nova jugadora del EDF Logroño, Raquel Infante" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/eNl78Sh_wyU" title="Coneixem a la nova jugadora del EDF Logroño, Inés Juan Altamira" allowfullscreen></iframe>
+        </div>
+    </main>
+    <footer class="footer-nav">
+        <div>
+            IBERDROLA Copyright &copy; 2020 |
         </div>
         <div>
-            <iframe src="https://www.youtube.com/embed/6xBpa5Z0QTg" title="Resum Partit EDF Logroño contra Levante UD 1 a 2. Primera jornada Iberdrola"
-            allowfullscreen></iframe>
-    
-            <iframe src="https://www.youtube.com/embed/d7s8YfkXbbM" title="Coneixem a la nova jugadora del EDF Logroño, Pamela Tajonar" 
-            allowfullscreen></iframe>
-    
-            <iframe src="https://www.youtube.com/embed/vLmDfJn_abA" title="Coneixem a la nova jugadora del EDF Logroño, Raquel Infante" 
-            allowfullscreen></iframe>
-    
-            <iframe src="https://www.youtube.com/embed/eNl78Sh_wyU" title="Coneixem a la nova jugadora del EDF Logroño, Inés Juan Altamira" 
-            allowfullscreen></iframe>
-        </div> 
-    </main>
-    <footer>
-        IBERDROLA Copyright &copy; 2020 | <a href="https://primeraiberdrola.es/aviso-legal/" target="_blank">Aviso legal</a>
-        <a href="https://primeraiberdrola.es/politica-de-cookies/" target="_blank">Política de cookies</a>
-        <a href="mailto:ministericulturaesport@info.com">ministericulturaesport@info.com</a>
-        <a href="https://www.facebook.com/Primeraiberdrola/" target="_blank"><img src="../img/fb-logo.png" alt="Logo Facebook"></a>
-        <a href="https://twitter.com/PrimerIberdrola" target="_blank"><img src="../img/tw-log.png" alt="Logo Twitter"></a>
-        <a href="https://www.instagram.com/primeraiberdrola/" target="_blank"><img src="../img/ins-logo.png" alt="Logo Instagram"></a>
+            <a href="https://primeraiberdrola.es/aviso-legal/" target="_blank">Aviso legal</a>
+            <a href="https://primeraiberdrola.es/politica-de-cookies/" target="_blank">Política de cookies</a>
+            <a href="mailto:ministericulturaesport@info.com">ministericulturaesport@info.com</a>
+            <a href="https://www.facebook.com/Primeraiberdrola/" target="_blank"><img src="../img/fb-logo.png" alt="Logo Facebook"></a>
+            <a class="footer-img" href="https://twitter.com/PrimerIberdrola" target="_blank"><img src="../img/tw-log.png" alt="Logo Twitter"></a>
+            <a class="footer-img" href="https://www.instagram.com/primeraiberdrola/" target="_blank"><img src="../img/ins-logo.png" alt="Logo Instagram"></a>
+        </div>
     </footer>
 </body>
+
 </html>

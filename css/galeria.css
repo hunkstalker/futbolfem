@@ -1,0 +1,9 @@
+.first {
+    display: inline-block;
+    width: 40vw;
+}
+
+.media iframe {
+    display: inline-block;
+    height: auto;
+}
