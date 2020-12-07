@@ -24,7 +24,7 @@ p {
 }
 
 .site-banner {
-    background-image: linear-gradient( rgba(25, 209, 231, 0.5), rgba(243, 17, 224, 0.5)), url(../img/header-2.jpg);
+    background-image: linear-gradient( rgba(25, 209, 231, 0.5), rgba(243, 17, 224, 0.5)), url(../img/header-min.jpg);
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
